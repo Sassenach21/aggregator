@@ -6,6 +6,6 @@ import org.springframework.stereotype.Service;
 import javax.validation.Valid;
 
 @Service
-public class PersonService {
-
+public abstract class PersonService {
+    public abstract void save(Person person);
 }

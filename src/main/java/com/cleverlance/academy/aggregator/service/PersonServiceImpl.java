@@ -1,11 +1,15 @@
 package com.cleverlance.academy.aggregator.service;
 
 import com.cleverlance.academy.aggregator.model.Person;
+import org.springframework.stereotype.Service;
 
 import javax.validation.Valid;
 
-public class PersonServiceImpl implements PersonService{
+@Service
+public class PersonServiceImpl extends PersonService {
 
-    void savePerson(@Valid Person person){
+    @Override
+    public void save(@Valid Person person) {
+
     }
 }

@@ -1,10 +1,10 @@
 package com.cleverlance.academy.aggregator.service;
 import com.cleverlance.academy.aggregator.model.Identification;
 import com.cleverlance.academy.aggregator.repository.IdentificationRepository;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
-public class IdentificationServiceImpl implements IdentificationRepository {
+@Service
+public class IdentificationServiceImpl implements IdentificationService {
 
     private final IdentificationRepository identificationRepository;
 
@@ -13,7 +13,7 @@ public class IdentificationServiceImpl implements IdentificationRepository {
     }
 
     @Override
-    public Identificaton getIdentification(){
+    public Identification getIdentification()  {
         return this.identificationRepository.getIdentification();
     }
 }

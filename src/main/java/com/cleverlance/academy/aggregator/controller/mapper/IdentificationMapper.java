@@ -9,7 +9,7 @@ public interface IdentificationMapper {
 
     Identification toIdentification(com.cleverlance.academy.aggregator.model.Identification identification);
 
-    @Mapping(target="adress.streetNumber", source = "adress.number" )
-    Adress toAdress();
+    @Mapping(target="streetNumber", source = "number" )
+    Adress toAdress(com.cleverlance.academy.aggregator.model.Adress  adress);
 
 }
